@@ -1,0 +1,165 @@
+vocabulary:
+  name: TCP/IP Vocabulary
+  description: >-
+    Normative vocabulary for the TCP/IP (Transmission Control Protocol/Internet Protocol)
+    suite of networking protocols, covering core concepts, protocol layers, and key
+    RFCs maintained by the IETF.
+  url: https://www.ietf.org/
+  version: '2026-05-03'
+  tags:
+    - Networking
+    - Protocol
+    - Standards
+    - IETF
+
+terms:
+
+  - term: TCP
+    definition: >-
+      Transmission Control Protocol. A connection-oriented transport layer protocol
+      that provides reliable, ordered, and error-checked delivery of data between
+      applications. Defined in RFC 9293.
+    type: Protocol
+    tags:
+      - Transport Layer
+
+  - term: IP
+    definition: >-
+      Internet Protocol. The network layer protocol responsible for addressing and
+      routing packets between hosts across networks. IPv4 defined in RFC 791,
+      IPv6 defined in RFC 2460.
+    type: Protocol
+    tags:
+      - Network Layer
+
+  - term: UDP
+    definition: >-
+      User Datagram Protocol. A connectionless transport protocol providing
+      low-latency, minimal-overhead data transmission without reliability guarantees.
+      Defined in RFC 768.
+    type: Protocol
+    tags:
+      - Transport Layer
+
+  - term: Three-Way Handshake
+    definition: >-
+      The TCP connection establishment process using SYN, SYN-ACK, and ACK packets
+      to synchronize sequence numbers between client and server before data transfer.
+    type: Concept
+    tags:
+      - Connection Management
+
+  - term: Socket
+    definition: >-
+      An endpoint for network communication combining an IP address and port number.
+      The Berkeley Sockets API (RFC 3493) provides the standard programming interface
+      for creating and using sockets.
+    type: Concept
+    tags:
+      - Programming Interface
+
+  - term: Port
+    definition: >-
+      A 16-bit number (0-65535) that identifies a specific application or service
+      on a host. Well-known ports (0-1023) are assigned by IANA.
+    type: Concept
+    tags:
+      - Addressing
+
+  - term: RFC
+    definition: >-
+      Request for Comments. Documents published by the IETF that define internet
+      standards, protocols, and best practices. TCP/IP protocols are defined through RFCs.
+    type: Standard
+    tags:
+      - Standards Process
+
+  - term: IETF
+    definition: >-
+      Internet Engineering Task Force. The standards organization responsible for
+      developing and promoting internet standards including TCP/IP protocols.
+    type: Organization
+    tags:
+      - Governance
+
+  - term: Congestion Control
+    definition: >-
+      TCP mechanisms to avoid overloading network paths. Algorithms include TCP Reno,
+      TCP CUBIC, and BBR, defined in various RFCs including RFC 5681.
+    type: Concept
+    tags:
+      - Performance
+
+  - term: Flow Control
+    definition: >-
+      TCP mechanism using a sliding window to prevent a fast sender from overwhelming
+      a slow receiver by limiting unacknowledged data in transit.
+    type: Concept
+    tags:
+      - Reliability
+
+  - term: IPv4
+    definition: >-
+      Internet Protocol version 4. Uses 32-bit addresses (e.g., 192.168.1.1).
+      Defined in RFC 791. The original version of IP, still widely deployed.
+    type: Protocol
+    tags:
+      - Network Layer
+
+  - term: IPv6
+    definition: >-
+      Internet Protocol version 6. Uses 128-bit addresses to address IPv4 address
+      exhaustion. Defined in RFC 2460.
+    type: Protocol
+    tags:
+      - Network Layer
+
+  - term: Sockets API
+    definition: >-
+      The Berkeley Sockets programming interface for TCP/IP network programming.
+      Defined in RFC 3493. Implemented in virtually all modern operating systems
+      and programming language standard libraries.
+    type: API
+    tags:
+      - Programming Interface
+      - Standard
+
+  - term: RFC 9293
+    definition: >-
+      The current canonical TCP specification, published August 2022. Consolidates
+      four decades of TCP updates and obsoletes the original RFC 793.
+    type: Document
+    tags:
+      - Specification
+
+  - term: Sequence Number
+    definition: >-
+      A 32-bit number in each TCP segment identifying the position of that
+      segment's data in the byte stream, enabling ordered reassembly.
+    type: Concept
+    tags:
+      - Reliability
+
+  - term: Acknowledgment Number
+    definition: >-
+      A TCP field indicating the next sequence number the receiver expects,
+      confirming receipt of all data up to that point.
+    type: Concept
+    tags:
+      - Reliability
+
+  - term: MSS
+    definition: >-
+      Maximum Segment Size. The largest amount of data a TCP endpoint is willing
+      to accept in a single segment, negotiated during the three-way handshake.
+    type: Concept
+    tags:
+      - Configuration
+
+  - term: Nagle Algorithm
+    definition: >-
+      A TCP optimization algorithm that reduces network congestion by combining
+      small packets into larger ones when possible, defined in RFC 896.
+    type: Algorithm
+    tags:
+      - Optimization
