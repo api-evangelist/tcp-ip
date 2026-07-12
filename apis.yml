@@ -45,6 +45,8 @@ apis:
       - type: Specification
         url: https://www.rfc-editor.org/rfc/rfc3493
 common:
+  - type: DomainSecurity
+    url: security/tcp-ip-domain-security.yml
   - type: Documentation
     name: RFC Editor
     description: Official IETF RFC Editor with all TCP/IP protocol specifications.
