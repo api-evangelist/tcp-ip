@@ -68,6 +68,12 @@ apis:
       - type: Specification
         url: https://www.rfc-editor.org/rfc/rfc3493
 common:
+  - type: Plans
+    url: plans/tcp-ip-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/tcp-ip-rate-limits.yml
+  - type: FinOps
+    url: finops/tcp-ip-finops.yml
   - type: DomainSecurity
     url: security/tcp-ip-domain-security.yml
   - type: Documentation
