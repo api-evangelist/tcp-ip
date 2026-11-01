@@ -1,4 +1,4 @@
-# TCP/IP
+# tcp-ip
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,64 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-TCP/IP (Transmission Control Protocol/Internet Protocol) is the foundational communication protocol suite that powers the internet and most computer networks. It provides reliable, ordered delivery of data between applications across diverse network hardware through a layered architecture of protocols. The suite encompasses protocols at multiple layers including TCP, IP, UDP, HTTP, and many others, defined through IETF RFCs maintained at the RFC Editor.
+## tcp-ip on APIs.io
 
-**Website:** [https://www.ietf.org/](https://www.ietf.org/)  
-**RFC Editor:** [https://www.rfc-editor.org/](https://www.rfc-editor.org/)  
-**IETF Datatracker:** [https://datatracker.ietf.org/](https://datatracker.ietf.org/)
+Everything profiled for tcp-ip is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tcp-ip/](https://apis.io/providers/tcp-ip/)** — or go straight to one of the APIs or properties below.
 
-## APIs and Specifications
+## API Evangelist rating
 
-### Berkeley Sockets API
+Not yet rated. See [apis.io/providers/tcp-ip/](https://apis.io/providers/tcp-ip/).
 
-The de facto standard programming interface for TCP/IP networking, defined in RFC 3493. Implemented nearly ubiquitously in modern operating systems and programming languages.
+## How this profile is made
 
-- **Specification:** [RFC 3493](https://www.rfc-editor.org/rfc/rfc3493)
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Core RFCs
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for tcp-ip: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| RFC | Title | Description |
-|-----|-------|-------------|
-| [RFC 9293](https://www.rfc-editor.org/rfc/rfc9293) | Transmission Control Protocol | Current canonical TCP specification (2022), supersedes RFC 793 |
-| [RFC 791](https://www.rfc-editor.org/rfc/rfc791) | Internet Protocol | IPv4 specification |
-| [RFC 768](https://www.rfc-editor.org/rfc/rfc768) | User Datagram Protocol | UDP specification |
-| [RFC 1180](https://www.rfc-editor.org/rfc/rfc1180) | TCP/IP Tutorial | Educational overview of the TCP/IP suite |
-| [RFC 3493](https://www.rfc-editor.org/rfc/rfc3493) | Basic Socket Interface Extensions for IPv6 | Standard sockets API |
-| [RFC 4614](https://www.rfc-editor.org/rfc/rfc4614) | Roadmap for TCP Specification Documents | Overview of TCP RFC landscape |
+## Open an issue
 
-## Features
-
-- **Reliable Delivery** - TCP guarantees ordered, reliable delivery of data between endpoints
-- **Connection-Oriented Communication** - TCP establishes connections via three-way handshake
-- **Flow Control** - Window-based flow control prevents overwhelming receivers
-- **Congestion Control** - Algorithms (Reno, CUBIC, BBR) manage network congestion
-- **IPv4 and IPv6 Support** - Protocol suite supports both 32-bit and 128-bit addressing
-- **Connectionless UDP** - Low-latency connectionless transport for real-time applications
-- **Multiplexing via Ports** - Port numbers allow multiple services to share an IP address
-
-## Use Cases
-
-- **Web Applications** - HTTP/HTTPS runs over TCP/IP for all web communication
-- **File Transfer** - FTP, SFTP, and SCP for reliable file transfer
-- **Email** - SMTP, IMAP, and POP3 for email transmission
-- **Real-Time Communications** - WebRTC and VoIP use UDP over IP for media streams
-- **Network Programming** - Berkeley Sockets API provides standard TCP/IP programming interface
-
-## Artifacts
-
-### Vocabulary
-
-| File | Description |
-|------|-------------|
-| [vocabulary/tcp-ip-vocabulary.yml](vocabulary/tcp-ip-vocabulary.yml) | TCP/IP domain terminology and protocol concepts |
-
-## Standards Bodies
-
-- **IETF** - Internet Engineering Task Force, maintains TCP/IP protocol standards
-- **RFC Editor** - Official repository for all Internet RFCs and standards
-- **IANA** - Internet Assigned Numbers Authority, manages port and protocol assignments
-
-## Timestamps
-
-- **Created:** 2025-01-01
-- **Modified:** 2026-05-03
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tcp-ip/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
